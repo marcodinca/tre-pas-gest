@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="it">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>TRE PASS GEST</title>
+	<meta name="description" content="trepas gest">
+	<meta name="copyright" content="Copyright (c) 2004 Alessandro Fardin">
+	<meta name="author" content="Alessandro Fardin">
+	<script type="text/javascript" src="iscrizioni.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen, print, projection" href="iscrizioniclass.css">
+</head>
+<body onload="loadUser(4)">
+<div id="wrap">
+	<div id="header"><h1>TRE PAS GEST</h1></div>
+	<div id="nav">
+
+	</div>
+	<div id="main">
+		<h1>ISCRIZIONI 4 KM</h1>
+			<br />
+			<br />
+			<form name="iscrizione" id="iscrittiId">
+				Cognome:
+				<input type="text" name="cognome" id="cognome"
+					   size="15" style="font-size: 20px" /> &nbsp; &nbsp;
+				Nome:
+				<input type="text" name="nome" id="nome" value="" size="15"
+					   style="font-size: 20px" onchange="checkSesso(this.form)" />
+					   &nbsp;&nbsp;
+				<br />
+				<br />
+				Sesso:
+				<input type="radio" name="sesso" value="M" style="font-size: 20px"
+					   checked="checked" /> M
+				<input type="radio" name="sesso" value="F"
+					   style="font-size: 20px" /> F
+				<br />
+				<br />
+				Data Nascita:
+				<input type="text" name="nascita" id="nascita" value="" size="10"
+					   style="font-size: 20px"
+					   onkeyup="dateSeparator(this.form,event)" /> &nbsp;
+				Pettorale:
+				<input type="text" name="pettorale" size="4"
+					   style="font-size: 20px" />
+				cert Med:
+				<input type="radio" name="certMed" value="0"
+				       style="font-size: 20px" checked="checked" /> No
+				<input type="radio" name="certMed" value="1"
+				       style="font-size: 20px" /> Si
+				<br />
+				<br />
+				<br />
+				Gruppo:
+				<input type="text" name="gruppo" value="" size="20"
+					   style="font-size: 20px" /> <br /><br />
+
+
+				<input type="hidden" name="abvs" value="NO" checked="checked"/>
+				<input type="hidden" name="abvs" value="NO" />
+				<input type="hidden" name="sezione" value=""  />
+
+
+<!--
+				ABVS:
+				<input type="radio" name="abvs" value="NO"
+					   style="font-size: 20px" checked="checked" /> NO
+				<input type="radio" name="abvs" value="SI"
+					   style="font-size: 20px" /> SI &nbsp; &nbsp; &nbsp;
+				Sezione:
+				<input type="text" name="sezione" value=""
+				size="20" style="font-size: 20px" />
+-->
+				<br />
+				<br />
+				<input type="button" name="Iscrivi" value="Iscrivi"
+				onclick="insertUser(this.form,4)"
+				style="font-size: 20px" />
+				<input type="button"
+				name="cancel" value="cancel"
+				onclick="cancel()" style="font-size: 20px" />
+
+			</form>
+			<br /> <!-- end #header -->
+
+		</div>
+	<div id="txtHint" class="sidebar">
+	</div>
+	<div id="footer">
+		<p>Footer</p>
+	</div>
+</div>
+</body>
+</html>

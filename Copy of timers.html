@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cronometro</title>
+	<script type="text/javascript" src="timers.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen, print, projection" href="iscrizioniclass.css" />
+</head>
+
+<!-- <body onclick="intertempo()"> -->
+<body >
+<div id="main">
+	<img src="svgclock.svg" />
+	<br />
+
+	<input id="mostra_cronometro" style="text-align: center;"
+		value="00:00:00:0" disabled="disabled" />
+	<button type="button" onclick="javascript:avvia();">
+	Avvia il cronometro1!</button>
+	&nbsp;
+	<button type="button" onclick="javascript:ferma();">STOP!</button>
+	&nbsp;
+	<button onclick="javascript:azzera();">Azzera!</button>
+	<br />
+	<br />
+	<br />
+
+	<input id="mostra_cronometro2" style="text-align: center;"
+		value="00:00:00:0" disabled="disabled" />
+	<button onclick="javascript:avvia2();">Avvia il cronometro2!</button>
+	&nbsp;
+	<button onclick="javascript:ferma2();">STOP!</button>
+	&nbsp;
+	<button onclick="javascript:azzera2();">Azzera!</button>
+	<br />
+	<br />
+
+	<button onclick="javascript:avvia3();">Avvia i cronometri!</button>
+	<br />
+	<input type="text" id="ins_pettorale" onchange="javascript:intertempo();" />
+</div>
+	<div id="txtHintTimer" class="sidebar">
+	Arrivo
+	</div>
+	<div id="intertempi"></div>
+
+</body>
+</html>

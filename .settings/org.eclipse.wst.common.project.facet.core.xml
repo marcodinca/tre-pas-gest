@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <fixed facet="php.core.component"/>
+  <fixed facet="wst.jsdt.web"/>
+  <fixed facet="php.component"/>
+  <installed facet="php.core.component" version="1"/>
+  <installed facet="wst.jsdt.web" version="1.0"/>
+  <installed facet="wst.web" version="1.0"/>
+  <installed facet="wst.jsdt.extjs.core" version="4.2"/>
+  <installed facet="wst.jsdt.extjs.cmd" version="3.1"/>
+  <installed facet="php.component" version="5.6"/>
+</faceted-project>
